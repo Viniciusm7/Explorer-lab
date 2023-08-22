@@ -90,7 +90,7 @@ cardHolder.addEventListener("input", () => {
   const ccHolder = document.querySelector(".cc-holder .value")
 
   ccHolder.innerText =
-    cardHolder.value.length === 0 ? "FULANO DA SILVA " : cardHolder.value
+    cardHolder.value.length === 0 ? "Seu nome " : cardHolder.value
 })
 
 securityCodeMasked.on("accept", () => {
@@ -120,5 +120,5 @@ expirationDateMasked.on("accept", () => {
 function updateExpirationDate(date) {
   const ccExpiration = document.querySelector(".cc-extra .value")
 
-  ccExpiration.innerText = date.length === 0 ? "02/32" : date
+  ccExpiration.innerText = date.length === 0 ? "00/00" : date
 }
